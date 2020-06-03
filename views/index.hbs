@@ -1,0 +1,183 @@
+{{> header}}
+{{> navbar}}    
+    <!-- Imagen Header -->
+    <div class="img-header">
+     <div class="welcome">
+       <h1>Bienvenidos </h1>
+       <hr>
+       <p>Acerca de pintores un poco locos y la locura en la pintura</p>
+       <button id="abajo">Ver abajo</button>
+     </div>       
+    </div>
+    
+    <div class="skew-abajo"></div>
+
+    </header>
+
+ <main>
+    <!-- tabla --> 
+<div class="acerca-t">
+    <div class="info-container">
+    <div class="info-container-title">
+     <h2>Lista de pintores</h2>
+     <hr>
+    </div>
+<table>
+  <thead>
+    {{#if pintores }}
+    </thead>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Periodos</th>
+            <th>Nombre</th>
+            <th>Pintura más famosa</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each pintores}}
+        <tr>
+            <td>{{ _id }}</td>
+            <td>{{ nombre }}</td>
+            <td>{{ periodos }}</td>
+            <td>{{ nacionalidad }}</td>
+            <td><img src="../images/{{ pintura}}"></td>
+        </tr>
+        {{/ each }}
+        </tbody>
+    </table>
+    {{ else }}
+    <div>No se encontraron Participantes.</div>
+    {{/if}}
+</div>
+</div>
+</div>
+
+   <!-- pintores -->
+   <section class="testimonios">
+    <div class="testimonios-title">
+     <h2>Mis pintores</h2>
+     <hr>
+    </div>
+
+     <div class="box-testimonio">
+      <div class="card-testimonio">
+        <div class="card-img"><img src="/images/van.jpg" alt=""></div>
+        <div class="testimonio-text">
+        <h4>Vincent van Gogh</h4>
+        <p>Vincent van Gogh, por quien el color era el símbolo principal de expresión, nació el 30 de marzo de 1853 en Groot-Zundert de Holanda. El hijo de un pastor, criado en una atmósfera religiosa y refinada, Vincent era muy emocional y no tenía confianza en sí mismo.</p>
+        <p><a href="https://historia-arte.com/artistas/vincent-van-gogh"> Más Aquí</a></p>
+      </div>
+      </div>
+
+      <div class="card-testimonio">
+        <div class="card-img"><img src="/images/lo.jpg" alt=""></div>
+        <div class="testimonio-text">
+        <h4>Louis Wain</h4>
+        <p>Louis Wain (1860-1939) fue un dibujante inglés tristemente célebre. Se convirtió en alguien muy conocido gracias a sus ilustraciones de gatos antropomórficos, que alcanzaron gran fama en todos los periódicos británicos de la época.</p>
+        <p><a href="https://psicologiaymente.com/miscelanea/louis-wain-gatos-arte-esquizofrenia"> Más Aquí </a></p>
+      </div>
+      </div>
+
+      <div class="card-testimonio">
+        <div class="card-img"><img src="/images/ed.jpg" alt=""></div>
+        <div class="testimonio-text">
+        <h4>Edvard Munch</h4>
+        <p>(Loten, Noruega, 1873 - Ekely, cerca de Oslo, id., 1944) Pintor y grabador noruego. Edvard Munch, considerado precursor de la tendencia expresionista, nació en Loten (Noruega) en 1863. ... Sus tristes y angustiosas representaciones basadas en sus obsesiones y frustraciones personales abrieron el camino al desarrollo del expresionismo.</p>
+        <p><a href="https://www.todocuadros.com.mx/pintores-famosos/munch/">Más Aquí</a></p>
+      </div>
+      </div>
+
+      <div class="card-testimonio">
+        <div class="card-img"><img src="/images/adolf.jpg" alt=""></div>
+        <div class="testimonio-text">
+        <h4>Adolf Wölfli</h4>
+        <p>Adolf Wölfli fue un hombre trastornado, desequilibrado e incomprendido, pero con un don innato y admirable para el arte. Wölfli nació en Berna, Suiza, en 1864. ... Morgenthaler escribió el libro Ein Geisteskranker als Künstler —Un paciente psiquiátrico como artista—, donde describía a Wölfli y sus logros.</p>
+        <p><a href="https://lamenteesmaravillosa.com/adolf-wolfli-el-artista-mas-conocido-de-art-brut/"> Más Aquí</a></p>
+      </div>
+      </div>
+
+      <div class="card-testimonio">
+        <div class="card-img"><img src="/images/jo.jpg" alt=""></div>
+        <div class="testimonio-text">
+        <h4>Théodore Géricault</h4>
+        <p>(Théodor o Théodore Géricault; Ruán, Francia, 1791 - París, 1824) Pintor francés. Fue una figura singular en el panorama de la pintura francesa y un pionero del Romanticismo, ideal que encarnó también en su tumultuosa vida y en su prematura muerte, a los treinta y tres años, a causa de un accidente de equitación.</p>
+        <p><a href="https://historia-arte.com/artistas/theodore-gericault"> Más Aquí</a></p>
+      </div>
+      </div>
+
+      <div class="card-testimonio">
+        <div class="card-img"><img src="/images/leo.jpg" alt=""></div>
+        <div class="testimonio-text">
+        <h4>Leonardo Da Vinci</h4>
+        <p>Leonardo da Vinci (Leonardo di ser Piero da Vinci) Loudspeaker.svg escuchar (Vinci, 15 de abril de 14522​-Amboise, 2 de mayo de 1519) fue un polímata florentino del Renacimiento italiano. Fue a la vez pintor, anatomista, arquitecto, paleontólogo,3​ artista, botánico, científico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista.</p>
+        <p><a href="https://canalhistoria.es/perfiles/leonardo-da-vinci/"> Más Aquí </a></p>
+      </div>
+      </div>
+
+     </div>
+   </section>
+ 
+   <!-- Nuestros proyectos -->
+   <section class="our-projects">
+      <div class="skew-arriba"></div>
+   <div class="deg-background"></div>
+   
+   <div class="ejeZproject">
+      <div class="container-project">
+        <div class="project-title">
+          <h2>Las pinturas más extrañas</h2>
+          <hr>
+        </div>
+          <div class="project-img">
+            <img src="/images/ex1.jpg" alt="">
+            <img src="/images/ex2.jpg" alt="">
+            <img src="/images/ex3.jpg" alt="">
+            <img src="/images/ex4.jpg" alt="">
+            <img src="/images/ex5.jpg" alt="">
+            <img src="/images/ex6.jpg" alt="">
+            <img src="/images/ex7.jpg" alt="">
+            <img src="/images/ex8.jpg" alt="">
+            <img src="/images/ex10.jpg" alt="">
+         </div>
+   <div class="skew-abajo"></div>
+   </section>
+
+
+ </main> 
+  <footer class="footer">
+   <div class="skew-arriba"></div>
+  <div class="deg-footer"></div>
+ 
+  <div class="ejeZfooter">
+  <div class="footer-content">
+   <div class="footer-title">
+     <h2>Sugerencias</h2>
+     <hr>
+   </div>
+
+   <div class="formulario-content">
+     <form id="formulario">
+        <label for="user">Nombre:</label>
+        <input type="text" id="user" name="user" placeholder="Ingresa tu Nombre">
+   
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu Correo Electronico">
+   
+        <label for="message" placeholder="tu comentario c:">Escribe tu mensaje</label>
+        <textarea name="menssage" id="message"></textarea>
+   
+        <div class="send"><button> <a href="rocio_1948@outlook.com"></a> Enviar</button></div>
+   
+        <div class="mensaje-form">
+          <p>Escribenos un mensaje, con gusto tendras una respuesta de parte de nosotros en muy poco tiempo.</p>
+        </div>
+     </form>
+   </div>
+  
+  </div>
+</div>
+ </footer>
+{{> footer}}

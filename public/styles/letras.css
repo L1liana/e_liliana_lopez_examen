@@ -1,0 +1,36 @@
+@font-face{
+    font-family: titulo;
+    src: url(t1.ttf);
+ }
+ @font-face{
+    font-family: lol;
+    src: url(lol.ttf);
+ }
+ @font-face{
+    font-family: p1;
+    src: url(han.ttf);
+ }
+ @font-face{
+    font-family: p2;
+    src: url(ple.ttf);
+ }
+ @font-face{
+    font-family: t1;
+    src: url(t1.ttf);
+}
+@font-face{
+    font-family: t;
+    src: url(t.ttf);
+}
+@font-face{
+    font-family: p;
+    src: url(p.ttf);
+}
+@font-face{
+    font-family: es;
+    src: url(Stayland.ttf);
+}
+@font-face{
+    font-family: sun;
+    src: url(sun.ttf);
+}
